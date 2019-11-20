@@ -3,8 +3,207 @@
 @import "libs"
 
 /*==========  user style  ==========*/
+body
+	font-family: 'Nunito', sans-serif
+
+a
+	transition: .3s
+	&:hover
+		color: $accent-2
+		text-decoration: none
+
+.btn
+	display: inline-block
+	padding: 15px 50px
+	border-radius: 30px
+	font-size: 20px
+	transition: .4s
+	font-weight: bold
+	text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+	cursor: pointer
+	
+
+	&__theme_orange
+		background-color: $accent-2
+		color: #fff
+		border: 2px solid $accent-2
+		&:hover
+			border: 2px solid #000
+			background-color: #000
+			color: #fff
+	
+	&__theme_transparent
+		border: 2px solid $accent-2
+		background-color: transparent
+		color: $accent-2
+		&:hover
+			color: #fff
+			background-color: $accent-2
+
+	&__theme_width-100
+		width: 100%
 .test
 	color: #000
+
+.page-header
+	padding: 35px 0
+
+.list
+	list-style: none
+	margin: 0
+	padding: 0
+
+	&_line
+		display: flex
+
+// header
+.navigation
+	text-align: center
+	&__item
+		&:not(:last-child)
+			margin-right: 25px
+	
+	&__link
+		color: #000
+		font-weight: 500
+		font-size: 20px
+		transition: .3s
+		&:hover
+			color: $accent-2
+			text-decoration: none
+
+.social
+
+	&__item
+		&:not(:last-child)
+			margin-right: 20px
+
+	&__link
+		font-size: 24px
+		color: #464646
+
+.slider
+	margin-bottom: 100px
+	&__img
+		img
+			width: 100%
+
+	&__item
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: linear-gradient(90deg, rgba(243,74,145,0.5690870098039216) 0%, rgba(246,126,177,0) 55%, rgba(255,255,255,0) 100%)
+	&__content
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		
+
+	&__title
+		font-size: 80px
+		color: #fff
+		text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+		
+
+		&-2
+			font-size: 26px
+			padding-bottom: 20px
+			color: #fff
+			text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+	
+	&__text
+		font-size: 16px
+		padding-bottom: 25px
+		padding-right: 40px
+		color: #fff
+		text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+
+.banner
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background: linear-gradient(90deg, rgba(243,74,145,0.5690870098039216) 0%, rgba(246,126,177,0) 100%)
+	&__img
+		img
+			width: 100%
+
+	&__content
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		padding: 0 40px
+
+	&__title
+		font-size: 60px
+		color: #fff
+		text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+
+	&__text
+		padding-bottom: 40px
+		padding-right: 40px
+		color: #fff
+		font-weight: bold
+		font-size: 20px
+		text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+
+
+.card-product
+	transition: .3s
+	height: 446px
+	
+	&:hover
+		//box-shadow: 0 10px 10px rgba(0,0,0,.1)
+		.product__action
+			visibility: visible
+			top: 65%
+			opacity: 1
+			box-shadow: 0 10px 10px rgba(0,0,0,.1)
+
+	&_img
+		img
+			width: 100%
+
+	&__content
+		padding: 30px 0
+		text-align: center
+
+.product
+
+	&__title
+		font-size: 20px
+	
+	&__price
+		font-weight: 900
+		font-size: 26px
+
+	&__action
+		visibility: hidden
+		transition: .3s
+		position: absolute
+		top: 50%
+		opacity: 0
+		left: 50%
+		transform: translateX(-50%)
+		padding: 10px 0 25px
+		width: calc(100% - 10px)
+		height: 250px
+		display: flex
+		justify-content: center
+		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 64%, rgba(255,255,255,1) 65%)
+		z-index: 10
+		.btn
+			margin-top: auto
+
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
