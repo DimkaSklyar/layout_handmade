@@ -8459,6 +8459,13 @@ a:hover {
   text-decoration: none;
 }
 
+.input-form {
+  padding: 15px 50px;
+  border-radius: 30px;
+  width: 100%;
+  border: 2px solid #cccccc;
+}
+
 .btn {
   display: inline-block;
   padding: 15px 50px;
@@ -8593,6 +8600,10 @@ a:hover {
   text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44);
 }
 
+.page-section {
+  padding-bottom: 80px;
+}
+
 .banner {
   position: relative;
 }
@@ -8645,6 +8656,14 @@ a:hover {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
+.card-product:hover .product__title {
+  color: #ff5486;
+}
+
+.card-product:hover .product__price {
+  color: #ff5486;
+}
+
 .card-product_img img {
   width: 100%;
 }
@@ -8656,11 +8675,13 @@ a:hover {
 
 .product__title {
   font-size: 20px;
+  color: #000;
 }
 
 .product__price {
   font-weight: 900;
   font-size: 26px;
+  color: #000;
 }
 
 .product__action {
@@ -8682,6 +8703,81 @@ a:hover {
 
 .product__action .btn {
   margin-top: auto;
+}
+
+.subscribe {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.subscribe__title {
+  text-align: center;
+  font-size: 26px;
+}
+
+.subscribe__text {
+  text-align: center;
+  font-weight: 500;
+  color: #828282;
+}
+
+.subscribe__input {
+  margin-bottom: 20px;
+}
+
+.page-footer {
+  padding: 80px 0;
+  background-color: #fafafa;
+  border-top: 1px solid #ebebeb;
+}
+
+.page-footer__column_title {
+  font-size: 35px;
+  text-align: left;
+}
+
+.page-footer__column_text {
+  color: #828282;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.page-footer_navigation .navigation__item {
+  text-align: left;
+  margin-bottom: 7px;
+}
+
+.page-footer_navigation .navigation__item .navigation__link {
+  font-size: 15px;
+  line-height: 1.45;
+  color: #828282;
+}
+
+.page-footer .address-list {
+  font-size: 15px;
+  line-height: 1.45;
+  color: #828282;
+}
+
+.page-footer .address-list .fa {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.page-footer .address-list li {
+  margin-bottom: 5px;
+}
+
+.page-footer .address-list li a {
+  color: #828282;
+}
+
+.page-footer .address-list li a:hover {
+  color: #ff5486;
 }
 
 /*==========  user style  ==========*/

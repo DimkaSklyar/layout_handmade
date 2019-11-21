@@ -12,6 +12,12 @@ a
 		color: $accent-2
 		text-decoration: none
 
+.input-form
+	padding: 15px 50px
+	border-radius: 30px
+	width: 100%
+	border: 2px solid #cccccc
+
 .btn
 	display: inline-block
 	padding: 15px 50px
@@ -122,7 +128,8 @@ a
 		padding-right: 40px
 		color: #fff
 		text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
-
+.page-section
+	padding-bottom: 80px
 .banner
 	position: relative
 	&:before
@@ -168,6 +175,10 @@ a
 			top: 65%
 			opacity: 1
 			box-shadow: 0 10px 10px rgba(0,0,0,.1)
+		.product__title
+			color: $accent-2
+		.product__price
+			color: $accent-2
 
 	&_img
 		img
@@ -181,10 +192,12 @@ a
 
 	&__title
 		font-size: 20px
+		color: #000
 	
 	&__price
 		font-weight: 900
 		font-size: 26px
+		color: #000
 
 	&__action
 		visibility: hidden
@@ -204,6 +217,64 @@ a
 		.btn
 			margin-top: auto
 
+.subscribe
+	padding: 30px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 100%
+	&__title
+		text-align: center
+		font-size: 26px
+
+	&__text
+		text-align: center
+		font-weight: 500
+		color: #828282
+	
+	&__input
+		margin-bottom: 20px
+
+.page-footer
+	padding: 80px 0
+	background-color: #fafafa
+	border-top: 1px solid #ebebeb
+
+	&__column
+
+		&_title
+			font-size: 35px
+			text-align: left
+
+		&_text
+			color: #828282
+			font-weight: 500
+			font-size: 15px
+			line-height: 1.45
+
+	&_navigation
+		.navigation__item
+			text-align: left
+			margin-bottom: 7px
+			.navigation__link
+				font-size: 15px
+				line-height: 1.45
+				color: #828282
+
+
+	.address-list
+		font-size: 15px
+		line-height: 1.45
+		color: #828282
+		.fa
+			margin-right: 10px
+			font-size: 20px
+		li
+			margin-bottom: 5px
+			a
+				color: #828282
+				&:hover
+					color: $accent-2
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
