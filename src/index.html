@@ -8,45 +8,55 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Hand-Made</title>
+	<title>Hand-Made - Главная</title>
 </head>
 
 <body>
 
 	<header class="page-header">
-		<div class="container">
-			<div class="row align-items-end">
-				<div class="col-3">
+		<div class="container ">
+			<div class="row align-items-lg-end align-items-start">
+				<div class="col-3 d-none d-lg-block">
 					<a href="index.html">
 						<div class="logo">
 							<img src="img/logo.png" alt="">
 						</div>
 					</a>
 				</div>
+				<div class="col-3 d-lg-none d-block">
+					<button class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</div>
 				<div class="col-6">
 					<nav>
-						<ul class="navigation list list_line justify-content-center">
-							<li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
-							<li class="navigation__item"><a href="clotches.html" class="navigation__link">Одежда</a></li>
-							<li class="navigation__item"><a href="toys.html" class="navigation__link">Игрушки</a></li>
-							<li class="navigation__item"><a href="accessories.html" class="navigation__link">Акссесуары</a></li>
-							<li class="navigation__item"><a href="about.html" class="navigation__link">О нас</a></li>
-							<li class="navigation__item"><a href="contacts.html" class="navigation__link">Контакты</a></li>
+						<ul class="navigation navigation-top list list_line justify-content-center">
+							<li class="navigation__item navigation-top__item"><a href="index.html"
+									class="navigation__link navigation-top__link">Главная</a></li>
+							<li class="navigation__item navigation-top__item"><a href="clotches.html"
+									class="navigation__link navigation-top__link">Одежда</a></li>
+							<li class="navigation__item navigation-top__item"><a href="toys.html"
+									class="navigation__link navigation-top__link">Игрушки</a></li>
+							<li class="navigation__item navigation-top__item"><a href="accessories.html"
+									class="navigation__link navigation-top__link">Акссесуары</a></li>
+							<li class="navigation__item navigation-top__item"><a href="about.html"
+									class="navigation__link navigation-top__link">О нас</a></li>
+							<li class="navigation__item navigation-top__item"><a href="contacts.html"
+									class="navigation__link navigation-top__link">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="col-3">
 					<div class="social_wrapper">
 						<ul class="social list list_line justify-content-end">
-							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<li class="social__item"><a href="https://vk.com/" class="social__link"><i class="fa fa-vk"
+										aria-hidden="true"></i></a>
 							</li>
-							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-facebook"
-										aria-hidden="true"></i></a></li>
-							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-pinterest"
-										aria-hidden="true"></i></a></li>
-							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-instagram"
-										aria-hidden="true"></i></a></li>
-							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-youtube"
+							<li class="social__item"><a href="https://www.facebook.com/" class="social__link"><i
+										class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li class="social__item"><a href="https://www.pinterest.ru/" class="social__link"><i
+										class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+							<li class="social__item"><a href="https://www.instagram.com/" class="social__link"><i
+										class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li class="social__item"><a href="https://www.youtube.com/" class="social__link"><i class="fa fa-youtube"
 										aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
@@ -54,7 +64,19 @@
 			</div>
 		</div>
 	</header>
-
+	<div class="mobile-logo d-block d-lg-none">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 offset-md-4 offset-3">
+					<a href="index.html">
+						<div class="mobile-logo__wrap">
+							<img src="img/logo.png" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="slider">
 		<div class="container">
 			<div class="row">
@@ -63,7 +85,7 @@
 						<div class="slider__img">
 							<img src="img/slide-1.jpg" alt="">
 						</div>
-						<div class="slider__content col-4 offset-1">
+						<div class="slider__content col-lg-4 offset-1 col-6">
 							<h2 class="slider__title">Декор</h2>
 							<h2 class="slider__title-2">Созданный специально для вас</h2>
 							<p class="slider__text">Наслаждайтесь каждой мелочью. Они очень ценны, и всегда будут радуют
@@ -80,7 +102,7 @@
 	<section class="page-section">
 		<div class="container">
 			<div class="row pb-4">
-				<div class="col-6">
+				<div class="col-lg-6 col-12 mb-5 mb-lg-0">
 					<div class="banner">
 						<div class="banner__img">
 							<img src="img/soap.jpg" alt="">
@@ -89,11 +111,11 @@
 							<h2 class="banner__title">Мыло</h2>
 							<div class="banner__text">Наши мыла и лосьоны ручной работы изготовлены по всем правилам. Мы используем
 								натуральные ингредиенты из растительных и минеральных экстрактов.</div>
-							<a href="#" class="btn btn__theme_orange">Подробнее</a>
+							<a href="accessories.html" class="btn btn__theme_orange">Подробнее</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-6">
 					<article class="card-product">
 						<a href="#">
 							<div class="card-product_img">
@@ -109,7 +131,7 @@
 						</a>
 					</article>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-6">
 					<article class="card-product">
 						<a href="#">
 							<div class="card-product_img">
@@ -127,7 +149,7 @@
 				</div>
 			</div>
 			<div class="row pb-4">
-				<div class="col-3">
+				<div class="col-lg-3 col-6 mt-md-10">
 					<article class="card-product">
 						<a href="#">
 							<div class="card-product_img">
@@ -143,7 +165,23 @@
 						</a>
 					</article>
 				</div>
-				<div class="col-9">
+				<div class="col-lg-3 col-6 mt-md-10 d-lg-none d-block">
+					<article class="card-product">
+						<a href="#">
+							<div class="card-product_img">
+								<img src="img/product/product-8.jpg" alt="" class="card__img">
+							</div>
+							<div class="card-product__content">
+								<h1 class=" product__title">Браслер с именем</h1>
+								<span class="product__price">1090 руб.</span>
+								<div class="product__action">
+									<button class="btn btn__theme_orange">Купить</button>
+								</div>
+							</div>
+						</a>
+					</article>
+				</div>
+				<div class="col-lg-9 col-12 mt-md-10">
 					<div class="banner">
 						<div class="banner__img">
 							<img src="img/knits.jpg" alt="">
@@ -151,13 +189,13 @@
 						<div class="banner__content">
 							<h2 class="banner__title">Вязаные носочки</h2>
 							<div class="banner__text">Стильные, уникальные аксессуары для взрослых и детей</div>
-							<a href="#" class="btn btn__theme_orange">Подробнее</a>
+							<a href="clotches.html" class="btn btn__theme_orange">Подробнее</a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row pb-4">
-				<div class="col-9">
+				<div class="col-lg-9 col-12">
 					<div class="banner">
 						<div class="banner__img">
 							<img src="img/toys.jpg" alt="">
@@ -165,11 +203,11 @@
 						<div class="banner__content">
 							<h2 class="banner__title">Игрушки</h2>
 							<div class="banner__text">Уникальные игрушеки ручной работы <br> сделанные с любовью.</div>
-							<a href="#" class="btn btn__theme_orange">Подробнее</a>
+							<a href="toys.html" class="btn btn__theme_orange">Подробнее</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-12">
 					<div class="subscribe">
 						<h2 class="subscribe__title">Новостная рассылка</h2>
 						<p class="subscribe__text">Подпишитесь на нашу рассылку, чтобы получать новости о новых поступлениях,
@@ -182,7 +220,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-3">
+				<div class="col-lg-3 col-6">
 					<article class="card-product">
 						<a href="#">
 							<div class="card-product_img">
@@ -198,7 +236,7 @@
 						</a>
 					</article>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-6">
 					<article class="card-product">
 						<a href="#">
 							<div class="card-product_img">
@@ -214,7 +252,7 @@
 						</a>
 					</article>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-6 mt-md-10">
 					<article class="card-product">
 						<a href="#">
 							<div class="card-product_img">
@@ -230,7 +268,7 @@
 						</a>
 					</article>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-6 mt-md-10">
 					<article class="card-product">
 						<a href="#">
 							<div class="card-product_img">
@@ -253,7 +291,7 @@
 	<footer class="page-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-5">
+				<div class="col-lg-5 col-12">
 					<div class="page-footer__column">
 						<h2 class="page-footer__column_title">О нас</h2>
 						<div class="page-footer__column_text">Наш магазин-это больше, чем просто еще один средний интернет-ритейлер.
@@ -264,7 +302,7 @@
 							доступа в интернет. Мы работаем, чтобы сделать вашу жизнь более приятной.</div>
 					</div>
 				</div>
-				<div class="col-2 offset-1">
+				<div class="col-lg-2 offset-lg-1 col-12 mt-md-3">
 					<div class="page-footer__column">
 						<h2 class="page-footer__column_title">Навигация</h2>
 						<nav>
@@ -279,7 +317,7 @@
 						</nav>
 					</div>
 				</div>
-				<div class="col-3 offset-1">
+				<div class="col-lg-3 offset-lg-1 col-12 mt-md-3">
 					<div class="page-footer__column">
 						<h2 class="page-footer__column_title">Контакты</h2>
 						<address>
@@ -293,17 +331,17 @@
 						</address>
 						<div class="social_wrapper">
 							<ul class="social list list_line justify-content-start">
-								<li class="social__item"><a href="#" class="social__link"><i class="fa fa-vk"
+								<li class="social__item"><a href="https://vk.com/" class="social__link"><i class="fa fa-vk"
 											aria-hidden="true"></i></a>
 								</li>
-								<li class="social__item"><a href="#" class="social__link"><i class="fa fa-facebook"
-											aria-hidden="true"></i></a></li>
-								<li class="social__item"><a href="#" class="social__link"><i class="fa fa-pinterest"
-											aria-hidden="true"></i></a></li>
-								<li class="social__item"><a href="#" class="social__link"><i class="fa fa-instagram"
-											aria-hidden="true"></i></a></li>
-								<li class="social__item"><a href="#" class="social__link"><i class="fa fa-youtube"
-											aria-hidden="true"></i></a></li>
+								<li class="social__item"><a href="https://www.facebook.com/" class="social__link"><i
+											class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li class="social__item"><a href="https://www.pinterest.ru/" class="social__link"><i
+											class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+								<li class="social__item"><a href="https://www.instagram.com/" class="social__link"><i
+											class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li class="social__item"><a href="https://www.youtube.com/" class="social__link"><i
+											class="fa fa-youtube" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -312,6 +350,7 @@
 		</div>
 	</footer>
 	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,7 @@
 /*==========  user style  ==========*/
 body
 	font-family: 'Nunito', sans-serif
+	min-width: 535px
 
 a
 	transition: .3s
@@ -17,6 +18,8 @@ a
 	border-radius: 30px
 	width: 100%
 	border: 2px solid #cccccc
+	+media-breakpoint-down(lg)
+		padding: 10px 25px
 
 .btn
 	display: inline-block
@@ -27,6 +30,9 @@ a
 	font-weight: bold
 	text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
 	cursor: pointer
+	+media-breakpoint-down(lg)
+		font-size: 16px
+		padding: 10px 25px
 	
 
 	&__theme_orange
@@ -53,7 +59,29 @@ a
 
 .page-header
 	padding: 35px 0
-
+	+media-breakpoint-down(md)
+		position: fixed
+		width: 100%
+		top: 0
+		z-index: 9999
+		background-color: $accent-2
+		padding: 10px 0
+		box-shadow: 0 3px 5px 0 rgba(0,0,0,.25);
+	.container
+		+media-breakpoint-down(md)
+			width: 100%
+			padding-left: 15px
+			padding-right: 15px
+			
+.mobile-menu
+	background: none
+	border: none
+	outline: 0 none
+	font-size: 25px
+	color: #fff
+	cursor: pointer
+	&:focus
+		outline: 0 none
 .list
 	list-style: none
 	margin: 0
@@ -61,23 +89,99 @@ a
 
 	&_line
 		display: flex
-
+.logo
+	+media-breakpoint-down(lg)
+		padding-right: 20px
+	img
+		+media-breakpoint-down(lg)
+			width: 100%
 // header
 .navigation
 	text-align: center
 	&__item
 		&:not(:last-child)
-			margin-right: 18px
-	
+			margin-right: 35px
+			+media-breakpoint-down(xxl)
+				margin-right: 30px
+			+media-breakpoint-down(xl)
+				margin-right: 18px
+			+media-breakpoint-down(lg)
+				margin-right: 15px
+			+media-breakpoint-down(md)
+				margin-right: 0
 	&__link
 		color: #000
 		font-weight: 500
 		font-size: 20px
 		transition: .3s
+		+media-breakpoint-down(lg)
+			font-size: 16px
+		+media-breakpoint-down(md)
+			color: #fff
+			font-size: 26px
 		&:hover
 			color: $accent-2
 			text-decoration: none
+			+media-breakpoint-down(md)
+				color: $accent
 
+	&__link
+		color: #000
+		font-weight: 500
+		font-size: 20px
+		transition: .3s
+		+media-breakpoint-down(lg)
+			font-size: 16px
+		+media-breakpoint-down(md)
+			color: #fff
+			font-size: 26px
+		&:hover
+			color: $accent-2
+			text-decoration: none
+			+media-breakpoint-down(md)
+				color: $accent
+
+
+.navigation-top
+	text-align: center
+	transition-timing-function: ease, ease
+	+media-breakpoint-down(md)
+		flex-direction: column
+		display: none
+	&.active
+		height: 320px
+	&__item
+		+media-breakpoint-down(md)
+			padding-top: 15px
+		&:not(:last-child)
+			margin-right: 35px
+			+media-breakpoint-down(xxl)
+				margin-right: 30px
+			+media-breakpoint-down(xl)
+				margin-right: 18px
+			+media-breakpoint-down(lg)
+				margin-right: 15px
+			+media-breakpoint-down(md)
+				margin-right: 0
+
+	&__link
+		color: #000
+		font-weight: 500
+		font-size: 20px
+		transition: .3s
+		+media-breakpoint-down(lg)
+			font-size: 16px
+		+media-breakpoint-down(md)
+			color: #fff
+			font-size: 26px
+			font-weight: bold
+		&:hover
+			color: $accent-2
+			text-decoration: none
+			+media-breakpoint-down(md)
+				color: $accent
+.mobile-logo
+	margin-top: 80px
 .social
 
 	&__item
@@ -87,9 +191,23 @@ a
 	&__link
 		font-size: 24px
 		color: #464646
-
+		&:hover
+			+media-breakpoint-down(md)
+				color: $accent
+		+media-breakpoint-down(md)
+			color: #fff
+.mt-md-10
+	+media-breakpoint-down(md)
+		margin-top: 100px
+	+media-breakpoint-down(sm)
+		margin-top: 10px
 .slider
 	margin-bottom: 100px
+	+media-breakpoint-down(lg)
+		margin-bottom: 60px
+	+media-breakpoint-down(md)
+		margin-top: 30px
+
 	&__img
 		img
 			width: 100%
@@ -104,6 +222,9 @@ a
 			left: 0
 			right: 0
 			background: linear-gradient(90deg, rgba(243,74,145,0.5690870098039216) 0%, rgba(246,126,177,0) 55%, rgba(255,255,255,0) 100%)
+			+media-breakpoint-down(md)
+			background: linear-gradient(90deg, rgba(243,74,145,0.5690870098039216) 0%, rgba(246,126,177,0) 100%, rgba(255,255,255,0) 100%)
+
 	&__content
 		position: absolute
 		top: 50%
@@ -114,6 +235,10 @@ a
 		font-size: 80px
 		color: #fff
 		text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+		+media-breakpoint-down(lg)
+			font-size: 55px
+		+media-breakpoint-down(sm)
+			font-size: 35px
 		
 
 		&-2
@@ -121,6 +246,11 @@ a
 			padding-bottom: 20px
 			color: #fff
 			text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+			+media-breakpoint-down(lg)
+				font-size: 20px
+			+media-breakpoint-down(sm)
+				font-size: 16px
+				padding-bottom: 5px
 	
 	&__text
 		font-size: 16px
@@ -128,6 +258,11 @@ a
 		padding-right: 40px
 		color: #fff
 		text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+		+media-breakpoint-down(lg)
+			font-size: 15px
+		+media-breakpoint-down(sm)
+			font-size: 14px
+			padding-bottom: 10px
 .page-section
 	padding-bottom: 80px
 .banner
@@ -154,6 +289,8 @@ a
 		font-size: 60px
 		color: #fff
 		text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+		+media-breakpoint-down(lg)
+			font-size: 45px
 
 	&__text
 		padding-bottom: 40px
@@ -162,11 +299,15 @@ a
 		font-weight: bold
 		font-size: 20px
 		text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.44)
+		+media-breakpoint-down(lg)
+			font-size: 15px
 
 
 .card-product
 	transition: .3s
 	height: 446px
+	+media-breakpoint-down(lg)
+		height: 350px
 	
 	&:hover
 		//box-shadow: 0 10px 10px rgba(0,0,0,.1)
@@ -175,6 +316,10 @@ a
 			top: 65%
 			opacity: 1
 			box-shadow: 0 10px 10px rgba(0,0,0,.1)
+			+media-breakpoint-down(md)
+				top: 80%
+			+media-breakpoint-down(sm)
+				top: 55%
 		.product__title
 			color: $accent-2
 		.product__price
@@ -193,11 +338,15 @@ a
 	&__title
 		font-size: 20px
 		color: #000
+		+media-breakpoint-down(lg)
+			font-size: 16px
 	
 	&__price
 		font-weight: 900
 		font-size: 26px
 		color: #000
+		+media-breakpoint-down(lg)
+			font-size: 22px
 
 	&__action
 		visibility: hidden
@@ -214,6 +363,10 @@ a
 		justify-content: center
 		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 64%, rgba(255,255,255,1) 65%)
 		z-index: 10
+		+media-breakpoint-down(lg)
+			height: 190px
+		+media-breakpoint-down(md)
+			height: 250px
 		.btn
 			margin-top: auto
 
@@ -223,14 +376,20 @@ a
 	flex-direction: column
 	justify-content: center
 	height: 100%
+	+media-breakpoint-down(lg)
+		padding: 5px
 	&__title
 		text-align: center
 		font-size: 26px
+		+media-breakpoint-down(lg)
+			font-size: 22px
 
 	&__text
 		text-align: center
 		font-weight: 500
 		color: #828282
+		+media-breakpoint-down(lg)
+			font-size: 15px
 	
 	&__input
 		margin-bottom: 20px
@@ -239,6 +398,11 @@ a
 	padding: 80px 0
 	background-color: #fafafa
 	border-top: 1px solid #ebebeb
+	+media-breakpoint-down(md)
+		margin-top: 60px
+	+media-breakpoint-down(sm)
+		margin-top: 0
+		padding: 30px 0 20px
 
 	&__column
 
