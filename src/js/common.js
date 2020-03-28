@@ -39,26 +39,31 @@ $(document).ready(function () {
   });
 
 
-// корзина
-  $(".changeOrder").click(function (e) {
-    e.preventDefault();
-    if ($(this).text() === "Изменить заказ") {
-      $('#textarea').prop('disabled', false);
-      $(this).text("Сохранить");
-    }
-    else {
-      $('#textarea').prop('disabled', true);
-      arrayOrder = $('#textarea').val().replace(/^[\n\r]+|[\n\r]+$/g, '').split(/[\n\r]+/);
-      $(this).text("Изменить заказ");
-      order.clear();
-      localStorage.clear();
-      for (let i = 0; i < arrayOrder.length; i++) {
-        order.add(arrayOrder[i]);
-      }
-      localStorage.setItem('order', arrayOrder);
-    }
+  $('.testimonials__slick').slick({
+    dots: true,
+    arrows: false
   });
 
+});
+
+// корзина
+$(".changeOrder").click(function (e) {
+  e.preventDefault();
+  if ($(this).text() === "Изменить заказ") {
+    $('#textarea').prop('disabled', false);
+    $(this).text("Сохранить");
+  }
+  else {
+    $('#textarea').prop('disabled', true);
+    arrayOrder = $('#textarea').val().replace(/^[\n\r]+|[\n\r]+$/g, '').split(/[\n\r]+/);
+    $(this).text("Изменить заказ");
+    order.clear();
+    localStorage.clear();
+    for (let i = 0; i < arrayOrder.length; i++) {
+      order.add(arrayOrder[i]);
+    }
+    localStorage.setItem('order', arrayOrder);
+  }
 });
 
 let arr = [];
