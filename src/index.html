@@ -117,12 +117,12 @@
 				</div>
 				<div class="col-lg-3 col-6">
 					<article class="card-product">
-						<a href="#">
+						<a href="#order-form" class="popup-with-form">
 							<div class="card-product_img">
 								<img src="img/product/product-1.jpg" alt="" class="card__img">
 							</div>
 							<div class="card-product__content">
-								<h1 class=" product__title">Собачка-щенок (крючком)</h1>
+								<h1 class="product__title">Собачка-щенок (крючком)</h1>
 								<span class="product__price">350 руб.</span>
 								<div class="product__action">
 									<button class="btn btn__theme_orange">Купить</button>
@@ -133,7 +133,7 @@
 				</div>
 				<div class="col-lg-3 col-6">
 					<article class="card-product">
-						<a href="#">
+						<a href="#order-form" class="popup-with-form">
 							<div class="card-product_img">
 								<img src="img/product/product-2.jpg" alt="" class="card__img">
 							</div>
@@ -151,12 +151,12 @@
 			<div class="row pb-4">
 				<div class="col-lg-3 col-6 mt-md-10">
 					<article class="card-product">
-						<a href="#">
+						<a href="#order-form" class="popup-with-form">
 							<div class="card-product_img">
 								<img src="img/product/product-3.jpg" alt="" class="card__img">
 							</div>
 							<div class="card-product__content">
-								<h1 class=" product__title">Подсвечники из веток деревьев</h1>
+								<h1 class=" product__title">Подсвечники из веток</h1>
 								<span class="product__price">290 руб.</span>
 								<div class="product__action">
 									<button class="btn btn__theme_orange">Купить</button>
@@ -167,7 +167,7 @@
 				</div>
 				<div class="col-lg-3 col-6 mt-md-10 d-lg-none d-block">
 					<article class="card-product">
-						<a href="#">
+						<a href="#order-form" class="popup-with-form">
 							<div class="card-product_img">
 								<img src="img/product/product-8.jpg" alt="" class="card__img">
 							</div>
@@ -213,16 +213,18 @@
 						<p class="subscribe__text">Подпишитесь на нашу рассылку, чтобы получать новости о новых поступлениях,
 							специальных предложениях и другую информацию о скидках.</p>
 						<form action="" id="subscribe-form">
-							<input type="email" class="input-form subscribe__input" name="email" id="email" placeholder="E-mail">
-							<button type="submit" class="btn btn__theme_transparent btn__theme_width-100">Подписаться</button>
+							<input type="email" class="input-form subscribe__input" name="email" id="email" placeholder="E-mail" required>
+							<div id="messegeResult-subscribe">
+								<button type="submit" class="btn btn__theme_transparent btn__theme_width-100">Подписаться</button>
+							</div>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row h-xxxl-540">
 				<div class="col-lg-3 col-6">
 					<article class="card-product">
-						<a href="#">
+						<a href="#order-form" class="popup-with-form">
 							<div class="card-product_img">
 								<img src="img/product/product-4.jpg" alt="" class="card__img">
 							</div>
@@ -238,7 +240,7 @@
 				</div>
 				<div class="col-lg-3 col-6">
 					<article class="card-product">
-						<a href="#">
+						<a href="#order-form" class="popup-with-form">
 							<div class="card-product_img">
 								<img src="img/product/product-5.jpg" alt="" class="card__img">
 							</div>
@@ -254,7 +256,7 @@
 				</div>
 				<div class="col-lg-3 col-6 mt-md-10">
 					<article class="card-product">
-						<a href="#">
+						<a href="#order-form" class="popup-with-form">
 							<div class="card-product_img">
 								<img src="img/product/product-6.jpg" alt="" class="card__img">
 							</div>
@@ -270,7 +272,7 @@
 				</div>
 				<div class="col-lg-3 col-6 mt-md-10">
 					<article class="card-product">
-						<a href="#">
+						<a href="#order-form" class="popup-with-form">
 							<div class="card-product_img">
 								<img src="img/product/product-7.jpg" alt="" class="card__img">
 							</div>
@@ -349,7 +351,39 @@
 			</div>
 		</div>
 	</footer>
+
+	<form id="order-form" class="white-popup-block mfp-hide">
+		<h1>Форма заказа</h1>
+		<fieldset style="border:0;">
+			<p>Пожалуйста заполните форму заказа.</br>
+				После чего наш менеджер свяжется с вам.</p>
+			<p>Так как наш интернет-магазин торгует исключительно продукцией произведённой вручную,
+				все заказы производятся по средствам отправки формы заказа с указанием данных для связи.
+				После отправки формы с Вами свяжется менеджер для уточнения заказа.
+				Сроки изготовления и доставки товара уточняйте у менеджера.</p>
+			<ol class="list order-list">
+				<li class="order-list__item">
+					<input class="input-form" id="name" name="name" type="text" placeholder="Имя" required="">
+				</li>
+				<li class="order-list__item">
+					<input class="input-form" id="email" name="email" type="email" placeholder="email@mail.ru" required="">
+				</li>
+				<li class="order-list__item">
+					<input class="input-form" id="phone" name="phone" type="tel" placeholder="Телефон" required="">
+				</li>
+				<li class="order-list__item">
+					<label for="textarea">Ваш заказ</label>
+					<textarea id="textarea" class="input-form" placeholder="Сообщение" rows="7" disabled></textarea>
+				</li>
+			</ol>
+		</fieldset>
+		<button type="submit" class="btn btn__theme_orange">Заказать</button>
+		<a class="btn btn__theme_orange changeOrder">Изменить заказ</a>
+	</form>
+
+
 	<script src="js/scripts.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 

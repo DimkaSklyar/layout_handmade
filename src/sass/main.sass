@@ -265,6 +265,10 @@ a
 			padding-bottom: 10px
 .page-section
 	padding-bottom: 80px
+	+media-breakpoint-down(xl)
+		padding-bottom: 20px
+	+media-breakpoint-down(lg)
+		padding-bottom: 80px
 .banner
 	position: relative
 	&:before
@@ -302,7 +306,11 @@ a
 		+media-breakpoint-down(lg)
 			font-size: 15px
 
-
+.h-xxxl-540
+	+media-breakpoint-down(xxxl)
+		height: 540px
+	+media-breakpoint-down(xxl)
+		height: auto
 .card-product
 	transition: .3s
 	height: 446px
@@ -316,6 +324,10 @@ a
 			top: 65%
 			opacity: 1
 			box-shadow: 0 10px 10px rgba(0,0,0,.1)
+			+media-breakpoint-down(xl)
+				top: 55%
+			+media-breakpoint-down(lg)
+				top: 60%
 			+media-breakpoint-down(md)
 				top: 80%
 			+media-breakpoint-down(sm)
@@ -439,6 +451,31 @@ a
 				color: #828282
 				&:hover
 					color: $accent-2
+
+
+.mfp-content
+	width: 600px !important
+	margin: 0 auto
+	background-color: #fff
+
+#order-form
+	text-align: center
+	padding: 20px
+
+	.order-list
+
+		&__item
+			margin-bottom: 20px
+			.input-form
+				&:focus
+					outline: none 0
+					border: 2px solid $accent-2
+	.btn
+		color: #fff
+	.changeOrder
+		background-color: darken($accent-2,10%)
+		&:hover
+			background-color: #000
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end

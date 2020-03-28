@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url(../libs/magnific-popup/dist/magnific-popup.css);
+
 @font-face {
   font-family: "roboto-example";
   font-weight: normal;
@@ -9686,6 +9688,18 @@ a:hover {
   padding-bottom: 80px;
 }
 
+@media (max-width: 1399px) {
+  .page-section {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .page-section {
+    padding-bottom: 80px;
+  }
+}
+
 .banner {
   position: relative;
 }
@@ -9738,6 +9752,16 @@ a:hover {
   }
 }
 
+.h-xxxl-540 {
+  height: 540px;
+}
+
+@media (max-width: 1631px) {
+  .h-xxxl-540 {
+    height: auto;
+  }
+}
+
 .card-product {
   transition: .3s;
   height: 446px;
@@ -9754,6 +9778,18 @@ a:hover {
   top: 65%;
   opacity: 1;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1399px) {
+  .card-product:hover .product__action {
+    top: 55%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .card-product:hover .product__action {
+    top: 60%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -9945,6 +9981,38 @@ a:hover {
 
 .page-footer .address-list li a:hover {
   color: #ff5486;
+}
+
+.mfp-content {
+  width: 600px !important;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+#order-form {
+  text-align: center;
+  padding: 20px;
+}
+
+#order-form .order-list__item {
+  margin-bottom: 20px;
+}
+
+#order-form .order-list__item .input-form:focus {
+  outline: none 0;
+  border: 2px solid #ff5486;
+}
+
+#order-form .btn {
+  color: #fff;
+}
+
+#order-form .changeOrder {
+  background-color: #ff2162;
+}
+
+#order-form .changeOrder:hover {
+  background-color: #000;
 }
 
 /*==========  user style  ==========*/
