@@ -11,6 +11,16 @@ $(document).ready(function () {
     }
   }
 
+  $(".action-drop").click(function (e) { 
+    e.preventDefault();
+    $(this).siblings(".drop-down").fadeToggle(
+      { 
+	      duration: 800, 
+	      easing: "linear", // скорость анимации
+	      queue: false // не ставим в очередь
+	    }
+    );
+  });
 
 
   $(".mobile-menu").click(function (e) {
@@ -124,3 +134,4 @@ $('#form-write-us').submit(function (e) {
   e.preventDefault();
   AjaxFormRequest('result', 'form-write-us', '../feedback.php');
 });
+
