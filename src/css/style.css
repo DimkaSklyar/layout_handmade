@@ -10523,6 +10523,46 @@ a:hover {
   color: #d0d0d0;
 }
 
+.form-write-us {
+  margin-bottom: 40px;
+}
+
+.form-write-us .form__label {
+  display: block;
+  color: #888;
+  padding-left: 15px;
+  line-height: 1;
+}
+
+.form-write-us .form__label span {
+  color: #ff5486;
+}
+
+.form-write-us .input-form:focus {
+  outline: 0 none;
+  border: 2px solid #ff5486;
+}
+
+.form-write-us .input__wrap {
+  margin-bottom: 20px;
+}
+
+.form-write-us .button-wrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.map {
+  padding-bottom: 80px;
+}
+
+.btn_mini {
+  padding: 5px;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+
 /*==========  user style  ==========*/
 .slick-dots li button:before {
   font-size: 55px;

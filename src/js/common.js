@@ -119,3 +119,8 @@ $('#subscribe-form').submit(function (e) {
   e.preventDefault();
   AjaxFormRequest('messegeResult-subscribe', 'subscribe-form', '../subscribe.php');
 });
+
+$('#form-write-us').submit(function (e) {
+  e.preventDefault();
+  AjaxFormRequest('result', 'form-write-us', '../feedback.php');
+});
