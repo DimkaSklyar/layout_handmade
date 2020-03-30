@@ -48,6 +48,20 @@ $(document).ready(function () {
     }
   });
 
+  $('.image-popup-no-margins').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
 
   $('.testimonials__slick').slick({
     dots: true,
@@ -84,7 +98,7 @@ $("a[href='#order-form']").click(function (e) {
   e.preventDefault();
   let i = 0;
   $('#textarea').val('');
-  let nameProduct = $(this).find(".product__title").text();
+  let nameProduct = $(this).closest(".card-product").find(".product__title").text();
   order.add(nameProduct);
   for (let item of order.values()) {
     $('#textarea').val($.trim($('#textarea').val() + '\n' + item));
