@@ -90,9 +90,9 @@ a
 	&_line
 		display: flex
 .logo
-	+media-breakpoint-down(lg)
-		padding-right: 20px
 	img
+		+media-breakpoint-down(xxl)
+			width: 100%
 		+media-breakpoint-down(lg)
 			width: 100%
 // header
@@ -191,6 +191,8 @@ a
 	&__link
 		font-size: 24px
 		color: #464646
+		+media-breakpoint-down(lg)
+			font-size: 20px
 		&:hover
 			+media-breakpoint-down(md)
 				color: $accent
@@ -313,10 +315,16 @@ a
 		height: auto
 .card-product
 	transition: .3s
-	height: 446px
+	height: 530px
+	overflow: hidden
+	+media-breakpoint-down(xxl)
+		height: 460px
 	+media-breakpoint-down(lg)
-		height: 350px
-	
+		height: 360px
+	+media-breakpoint-down(md)
+		height: 460px
+	+media-breakpoint-down(sm)
+		height: 360px
 	&:hover
 		//box-shadow: 0 10px 10px rgba(0,0,0,.1)
 		.product__action
@@ -378,6 +386,8 @@ a
 		+media-breakpoint-down(lg)
 			height: 190px
 		+media-breakpoint-down(md)
+			height: 160px
+		+media-breakpoint-down(sm)
 			height: 250px
 		.btn
 			margin-top: auto
@@ -436,6 +446,8 @@ a
 				font-size: 15px
 				line-height: 1.45
 				color: #828282
+				&:hover
+					color: $accent-2
 
 
 	.address-list
@@ -644,6 +656,8 @@ a
 .sidebar
 	width: 100%
 	padding-right: 30px
+	+media-breakpoint-down(md)
+		padding-right: 0
 	h2
 		text-transform: uppercase
 .accord
@@ -672,18 +686,62 @@ a
 .mix
 	padding-right: 15px
 	padding-left: 15px
+	+media-breakpoint-down(xxl)
+		padding-left: 5px
+		padding-right: 5px
 	.card-product
 		height: 530px
+		+media-breakpoint-down(xxl)
+			height: 460px
+		+media-breakpoint-down(lg)
+			height: 360px
+		+media-breakpoint-down(md)
+			height: 460px
+		+media-breakpoint-down(sm)
+			height: 360px
 		&_img
+			margin: 0 auto
 			width: 383px
 			height: 383px
 			overflow: hidden
 			display: flex
 			justify-content: center
 			align-items: center
+			+media-breakpoint-down(xxl)
+				width: 100%
+				height: 335px
+			+media-breakpoint-down(xl)
+				width: 100%
+				height: 272px
+			+media-breakpoint-down(lg)
+				width: 100%
+				height: 220px
+			+media-breakpoint-down(md)
+				width: 100%
+				height: 335px
+			+media-breakpoint-down(sm)
+				width: 100%
+				height: 260px
 			img
 				width: 100%
 				height: 100%
+		.product__action
+			+media-breakpoint-down(xxxl)
+				width: 370px
+			+media-breakpoint-down(xxl)
+				width: 280px
+			+media-breakpoint-down(lg)
+				height: 190px
+				width: 230px
+			+media-breakpoint-down(md)
+				height: 250px
+				width: 350px
+			+media-breakpoint-down(sm)
+				height: 230px
+				width: 260px
+	.card-product:hover .product__action
+		+media-breakpoint-down(md)
+			top: 60%
 .mixitup-control-active
 	color: #fff
 	background-color: #ff5486
@@ -740,4 +798,8 @@ button.mixitup-control-disabled
 button.mixitup-control-active
 	background-color: $accent-2
 	color: #fff
+.pay
+	h2
+		color: #ff4d48
+		text-transform: uppercase
 @import "media" // Always at the end

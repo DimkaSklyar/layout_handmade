@@ -63,10 +63,6 @@ $(document).ready(function () {
 		}
 	});
 
-  $('.testimonials__slick').slick({
-    dots: true,
-    arrows: false
-  });
 
 });
 
@@ -147,5 +143,11 @@ $('#subscribe-form').submit(function (e) {
 $('#form-write-us').submit(function (e) {
   e.preventDefault();
   AjaxFormRequest('result', 'form-write-us', '../feedback.php');
+});
+
+
+$('#order-form').submit(function (e) {
+  e.preventDefault();
+  AjaxFormRequest('messRez', 'order-form', '../order.php');
 });
 

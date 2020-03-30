@@ -3,7 +3,7 @@ if($_POST)
 { 
 $to = "mail@mail.ru"; 
 $subject = "Подписка на рассылку"; 
-$message = '<span style="font-weight:bold;color:#ff6600;font-size:18px;"><i>Обратная связь!</i> </span><br><br> 
+$message = '<span style="font-weight:bold;color:#ff6600;font-size:18px;"><i>Подписка на рассылку!</i> </span><br><br> 
 Имя: <span style="font-weight:bold;color:#000;">'.$_POST['name'].'</span><br> 
 Телефон: <span style="font-weight:bold;color:#339900;">'.$_POST['phone2'];; 
 $headers = "Content-type: text/html; charset=UTF-8 \r\n"; 

@@ -9520,7 +9520,7 @@ a {
 }
 
 a:hover {
-  color: #ff5486;
+  color: #ff4d48;
   text-decoration: none;
 }
 
@@ -9556,9 +9556,9 @@ a:hover {
 }
 
 .btn__theme_orange {
-  background-color: #ff5486;
+  background-color: #ff4d48;
   color: #fff;
-  border: 2px solid #ff5486;
+  border: 2px solid #ff4d48;
 }
 
 .btn__theme_orange:hover {
@@ -9568,14 +9568,14 @@ a:hover {
 }
 
 .btn__theme_transparent {
-  border: 2px solid #ff5486;
+  border: 2px solid #ff4d48;
   background-color: transparent;
-  color: #ff5486;
+  color: #ff4d48;
 }
 
 .btn__theme_transparent:hover {
   color: #fff;
-  background-color: #ff5486;
+  background-color: #ff4d48;
 }
 
 .btn__theme_width-100 {
@@ -9596,7 +9596,7 @@ a:hover {
     width: 100%;
     top: 0;
     z-index: 9999;
-    background-color: #ff5486;
+    background-color: #ff4d48;
     padding: 10px 0;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   }
@@ -9633,9 +9633,9 @@ a:hover {
   display: flex;
 }
 
-@media (max-width: 1199px) {
-  .logo {
-    padding-right: 20px;
+@media (max-width: 1631px) {
+  .logo img {
+    width: 100%;
   }
 }
 
@@ -9698,7 +9698,7 @@ a:hover {
 }
 
 .navigation__link:hover {
-  color: #ff5486;
+  color: #ff4d48;
   text-decoration: none;
 }
 
@@ -9729,7 +9729,7 @@ a:hover {
 }
 
 .navigation__link:hover {
-  color: #ff5486;
+  color: #ff4d48;
   text-decoration: none;
 }
 
@@ -9811,7 +9811,7 @@ a:hover {
 }
 
 .navigation-top__link:hover {
-  color: #ff5486;
+  color: #ff4d48;
   text-decoration: none;
 }
 
@@ -9832,6 +9832,12 @@ a:hover {
 .social__link {
   font-size: 24px;
   color: #464646;
+}
+
+@media (max-width: 1199px) {
+  .social__link {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -10038,12 +10044,31 @@ a:hover {
 
 .card-product {
   transition: .3s;
-  height: 446px;
+  height: 530px;
+  overflow: hidden;
+}
+
+@media (max-width: 1631px) {
+  .card-product {
+    height: 460px;
+  }
 }
 
 @media (max-width: 1199px) {
   .card-product {
-    height: 350px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 991px) {
+  .card-product {
+    height: 460px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-product {
+    height: 360px;
   }
 }
 
@@ -10079,11 +10104,11 @@ a:hover {
 }
 
 .card-product:hover .product__title {
-  color: #ff5486;
+  color: #ff4d48;
 }
 
 .card-product:hover .product__price {
-  color: #ff5486;
+  color: #ff4d48;
 }
 
 .card-product_img img {
@@ -10142,6 +10167,12 @@ a:hover {
 }
 
 @media (max-width: 991px) {
+  .product__action {
+    height: 160px;
+  }
+}
+
+@media (max-width: 767px) {
   .product__action {
     height: 250px;
   }
@@ -10234,6 +10265,10 @@ a:hover {
   color: #828282;
 }
 
+.page-footer_navigation .navigation__item .navigation__link:hover {
+  color: #ff4d48;
+}
+
 .page-footer .address-list {
   font-size: 15px;
   line-height: 1.45;
@@ -10254,7 +10289,7 @@ a:hover {
 }
 
 .page-footer .address-list li a:hover {
-  color: #ff5486;
+  color: #ff4d48;
 }
 
 .popup-with-form {
@@ -10279,7 +10314,7 @@ a:hover {
 
 #order-form .order-list__item .input-form:focus {
   outline: none 0;
-  border: 2px solid #ff5486;
+  border: 2px solid #ff4d48;
 }
 
 #order-form .btn {
@@ -10287,7 +10322,7 @@ a:hover {
 }
 
 #order-form .changeOrder {
-  background-color: #ff2162;
+  background-color: #ff1b15;
 }
 
 #order-form .changeOrder:hover {
@@ -10354,7 +10389,7 @@ a:hover {
 .advantages__item {
   text-align: center;
   text-transform: uppercase;
-  color: #ff5486;
+  color: #ff4d48;
   font-weight: 900;
   line-height: 1;
   padding: 30px 0;
@@ -10416,9 +10451,9 @@ a:hover {
   width: 135px;
   height: 135px;
   border-radius: 50%;
-  border: 3px solid #ff5486;
+  border: 3px solid #ff4d48;
   font-size: 60px;
-  color: #ff5486;
+  color: #ff4d48;
   line-height: 135px;
   text-align: center;
   margin: 0 auto;
@@ -10459,7 +10494,7 @@ a:hover {
 
 .team__title {
   text-transform: uppercase;
-  color: #ff5486;
+  color: #ff4d48;
   font-size: 16px;
   margin-bottom: 0;
   margin-top: 10px;
@@ -10508,7 +10543,7 @@ a:hover {
   display: block;
   text-align: center;
   text-transform: uppercase;
-  color: #ff5486;
+  color: #ff4d48;
 }
 
 .testimonials__item q {
@@ -10540,12 +10575,12 @@ a:hover {
 }
 
 .form-write-us .form__label span {
-  color: #ff5486;
+  color: #ff4d48;
 }
 
 .form-write-us .input-form:focus {
   outline: 0 none;
-  border: 2px solid #ff5486;
+  border: 2px solid #ff4d48;
 }
 
 .form-write-us .input__wrap {
@@ -10576,6 +10611,12 @@ a:hover {
   padding-right: 30px;
 }
 
+@media (max-width: 991px) {
+  .sidebar {
+    padding-right: 0;
+  }
+}
+
 .sidebar h2 {
   text-transform: uppercase;
 }
@@ -10602,7 +10643,7 @@ a:hover {
 .radio {
   text-align: left;
   margin-left: 30px;
-  color: #ff5486;
+  color: #ff4d48;
   font-weight: bold;
 }
 
@@ -10620,11 +10661,43 @@ a:hover {
   padding-left: 15px;
 }
 
+@media (max-width: 1631px) {
+  .mix {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 .mix .card-product {
   height: 530px;
 }
 
+@media (max-width: 1631px) {
+  .mix .card-product {
+    height: 460px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mix .card-product {
+    height: 360px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mix .card-product {
+    height: 460px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mix .card-product {
+    height: 360px;
+  }
+}
+
 .mix .card-product_img {
+  margin: 0 auto;
   width: 383px;
   height: 383px;
   overflow: hidden;
@@ -10633,9 +10706,81 @@ a:hover {
   align-items: center;
 }
 
+@media (max-width: 1631px) {
+  .mix .card-product_img {
+    width: 100%;
+    height: 335px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .mix .card-product_img {
+    width: 100%;
+    height: 272px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mix .card-product_img {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mix .card-product_img {
+    width: 100%;
+    height: 335px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mix .card-product_img {
+    width: 100%;
+    height: 260px;
+  }
+}
+
 .mix .card-product_img img {
   width: 100%;
   height: 100%;
+}
+
+.mix .card-product .product__action {
+  width: 370px;
+}
+
+@media (max-width: 1631px) {
+  .mix .card-product .product__action {
+    width: 280px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mix .card-product .product__action {
+    height: 190px;
+    width: 230px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mix .card-product .product__action {
+    height: 250px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mix .card-product .product__action {
+    height: 230px;
+    width: 260px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mix .card-product:hover .product__action {
+    top: 60%;
+  }
 }
 
 .mixitup-control-active {
@@ -10656,7 +10801,7 @@ input[name="price"]:checked + label[class^=radio]:after {
   transform: translateY(-50%);
   width: 10px;
   height: 10px;
-  background-color: #ff5486;
+  background-color: #ff4d48;
 }
 
 label[class^=radio] {
@@ -10671,7 +10816,7 @@ label[class^=radio]:before {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  border-color: #ff5486;
+  border-color: #ff4d48;
   border-width: 2px;
   border-style: solid;
   left: 0;
@@ -10687,28 +10832,33 @@ label[class^=radio]:before {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  border: 2px solid #ff5486;
+  border: 2px solid #ff4d48;
   background-color: transparent;
   cursor: pointer;
-  color: #ff5486;
+  color: #ff4d48;
   font-weight: bold;
   transition: .3s;
 }
 
 .mixitup-page-list button:hover {
-  background-color: #ff5486;
+  background-color: #ff4d48;
   color: #fff;
-  border-color: #ff5486;
+  border-color: #ff4d48;
 }
 
 button.mixitup-control-disabled {
-  background-color: #ffbace;
-  border-color: #ffbace;
+  background-color: #ffb0ae;
+  border-color: #ffb0ae;
 }
 
 button.mixitup-control-active {
-  background-color: #ff5486;
+  background-color: #ff4d48;
   color: #fff;
+}
+
+.pay h2 {
+  color: #ff4d48;
+  text-transform: uppercase;
 }
 
 /*==========  Desktop First  ==========*/

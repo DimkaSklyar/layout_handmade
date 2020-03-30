@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Hand-Made Иванова - Акссесуары</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="container ">
+      <div class="row align-items-lg-end align-items-start">
+        <div class="col-xxxl-3 col-2 d-none d-lg-block">
+          <a href="index.html">
+            <div class="logo">
+              <img src="img/logo.png" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="col-2 d-lg-none d-block">
+          <button class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        </div>
+        <div class="col-xxxl-6 col-8">
+          <nav>
+            <ul class="navigation navigation-top list list_line justify-content-center">
+              <li class="navigation__item navigation-top__item"><a href="index.html"
+                  class="navigation__link navigation-top__link">Главная</a></li>
+              <li class="navigation__item navigation-top__item"><a href="clotches.html"
+                  class="navigation__link navigation-top__link">Одежда</a></li>
+              <li class="navigation__item navigation-top__item"><a href="toys.html"
+                  class="navigation__link navigation-top__link">Игрушки</a></li>
+              <li class="navigation__item navigation-top__item"><a href="accessories.html"
+                  class="navigation__link navigation-top__link">Акссесуары</a></li>
+              <li class="navigation__item navigation-top__item"><a href="about.html"
+                  class="navigation__link navigation-top__link">О нас</a></li>
+              <li class="navigation__item navigation-top__item"><a href="pay.html"
+                  class="navigation__link navigation-top__link">Оплата</a></li>
+              <li class="navigation__item navigation-top__item"><a href="contacts.html"
+                  class="navigation__link navigation-top__link">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-xxxl-3 col-2">
+          <div class="social_wrapper">
+            <ul class="social list list_line justify-content-end">
+              <li class="social__item"><a href="https://vk.com/" class="social__link"><i class="fa fa-vk"
+                    aria-hidden="true"></i></a>
+              </li>
+              <li class="social__item"><a href="https://www.facebook.com/" class="social__link"><i
+                    class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="social__item"><a href="https://www.pinterest.ru/" class="social__link"><i
+                    class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+              <li class="social__item"><a href="https://www.instagram.com/" class="social__link"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li class="social__item"><a href="https://www.youtube.com/" class="social__link"><i class="fa fa-youtube"
+                    aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-logo d-block d-lg-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 offset-md-4 offset-3">
+          <a href="index.html">
+            <div class="mobile-logo__wrap">
+              <img src="img/logo.png" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="other-page">
+    <div class="container">
+      <h1 class="page-title">Акссесуары</h1>
+    </div>
+  </div>
+
+  <section class="product-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-12">
+          <div class="row">
+            <aside class="sidebar">
+              <h2>Фильтры</h2>
+              <div class="accord">
+                <h3 class="action-drop">Категории <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                <div class="drop-down">
+                  <button class="btn btn__theme_transparent btn_mini" type="button" data-filter="all">Все</button>
+                  <button class="btn btn__theme_transparent btn_mini" type="button" data-filter=".soup">Мыло</button>
+                  <button class="btn btn__theme_transparent btn_mini" type="button"
+                    data-filter=".bij">Бижутерия</button>
+                  <button class="btn btn__theme_transparent btn_mini" type="button"
+                    data-filter=".decoration">Декор</button>
+                </div>
+              </div>
+              <div class="accord">
+                <h3 class="action-drop">Цена <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                <div class="drop-down">
+                  <div class="radio-group radios-filter">
+                    <div class="radio">
+                      <input name="price" type="radio" id="all-price" checked="" data-toggle="all">
+                      <label class="radio-label" for="all-price">Все</label>
+                    </div>
+                    <div class="radio">
+                      <input id="price-under-1000" name="price" type="radio" data-price-min="0" data-price-max="999">
+                      <label for="price-under-1000" class="radio-label">0 <i class="fa fa-rub" aria-hidden="true"></i> -
+                        999
+                        <i class="fa fa-rub" aria-hidden="true"></i></label>
+                    </div>
+                    <div class="radio">
+                      <input id="price-under-2500" name="price" type="radio" data-price-min="1000"
+                        data-price-max="2500">
+                      <label for="price-under-2500" class="radio-label">1000 <i class="fa fa-rub"
+                          aria-hidden="true"></i> -
+                        2499 <i class="fa fa-rub" aria-hidden="true"></i></label>
+                    </div>
+                    <div class="radio">
+                      <input id="price-under-5000" name="price" type="radio" data-price-min="2500"
+                        data-price-max="4999">
+                      <label for="price-under-5000" class="radio-label">2500 <i class="fa fa-rub"
+                          aria-hidden="true"></i> -
+                        4999 <i class="fa fa-rub" aria-hidden="true"></i></label>
+                    </div>
+                    <div class="radio">
+                      <input id="price-under-over999" name="price" type="radio" data-price-min="5000"
+                        data-price-max="999999">
+                      <label for="price-under-over999" class="radio-label">5000 <i class="fa fa-rub"
+                          aria-hidden="true"></i>
+                        - и выше</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accord">
+                <h3 class="action-drop">Сортировка <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                <div class="drop-down">
+                  <button class="btn btn__theme_transparent btn_mini" type="button" class="control mixitup-control"
+                    data-sort="default">По умолчанию</button>
+                  <button class="btn btn__theme_transparent btn_mini" type="button" class="control mixitup-control"
+                    data-sort="order:asc">По возрастанию</button>
+                  <button class="btn btn__theme_transparent btn_mini" type="button" class="control mixitup-control"
+                    data-sort="order:descending"">По убыванию</button>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+			<div class=" col-lg-9 col-12">
+                    <div class="row mixitp-up">
+                      <div class="col-lg-4 col-6 mix decoration" data-order="430" data-size="430">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-2.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-2.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Фото цветочной феи</h1>
+                            </a>
+                            <span class="product__price">430 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix decoration" data-order="290" data-size="290">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-3.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-3.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Подсвечники из веток</h1>
+                            </a>
+                            <span class="product__price">290 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix bij" data-order="1090" data-size="1090">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-8.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-8.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Браслер с именем</h1>
+                            </a>
+                            <span class="product__price">1090 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix bij" data-order="590" data-size="590">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-4.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-4.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Ожерелье-кулон Фея</h1>
+                            </a>
+                            <span class="product__price">590 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix kids" data-order="2490" data-size="2490">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-5.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-5.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Прикроватная тумбочка</h1>
+                            </a>
+                            <span class="product__price">2490 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix decoration" data-order="890" data-size="890">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-6.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-6.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Свадебный подарок блюдце</h1>
+                            </a>
+                            <span class="product__price">890 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix soup" data-order="730" data-size="730">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-22.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-22.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Мыло "Русский лес"</h1>
+                            </a>
+                            <span class="product__price">730 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix soup" data-order="850" data-size="850">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-23.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-23.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Мыло "Заказ на море"</h1>
+                            </a>
+                            <span class="product__price">850 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix soup" data-order="1030" data-size="1030">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-24.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-24.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Мыло "Цветок Рики"</h1>
+                            </a>
+                            <span class="product__price">1030 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix soup" data-order="1230" data-size="1230">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-25.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-25.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Мыло "Цветок Розы"</h1>
+                            </a>
+                            <span class="product__price">1230 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix decoration" data-order="2499" data-size="2499">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/product-25.jpg" class="image-popup-no-margins">
+                              <img src="img/product/product-25.jpg" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Часы "Цветение"</h1>
+                            </a>
+                            <span class="product__price">2499 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix decoration" data-order="2499" data-size="2499">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/s1200.jfif" class="image-popup-no-margins">
+                              <img src="img/product/s1200.jfif" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Подушка "Радуга"</h1>
+                            </a>
+                            <span class="product__price">2499 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-4 col-6 mix decoration" data-order="1499" data-size="1499">
+                        <article class="card-product">
+                          <div class="card-product_img">
+                            <a href="img/product/s1200-2.jfif" class="image-popup-no-margins">
+                              <img src="img/product/s1200-2.jfif" alt="" class="card__img">
+                            </a>
+                          </div>
+                          <div class="card-product__content">
+                            <a href="#order-form" class="popup-with-form">
+                              <h1 class=" product__title">Подсвечник "Баночка"</h1>
+                            </a>
+                            <span class="product__price">1499 руб.</span>
+                            <div class="product__action">
+                              <a href="#order-form" class="popup-with-form">
+                                <button class="btn btn__theme_orange">Купить</button>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="mixitup-page-list"></div>
+                </div>
+              </div>
+          </div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-12">
+          <div class="page-footer__column">
+            <h2 class="page-footer__column_title">О нас</h2>
+            <div class="page-footer__column_text">Для Вас работает команда профессионалов, не только знающих своё дело,
+              но и по-настоящему любящих мир хэндмэйда. Мы постарались превратить свой хобби-маркет в уютное, тёплое и
+              дружелюбное место, где Вам всегда будут рады и Вы легко найдёте то, что Вам по душе. Все наши сотрудники —
+              настоящие специалисты с большой буквы, им не составит труда помочь с выбором тех материалов и
+              инструментов, которые лучше всего подойдут для осуществления именно Вашей идеи.</div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-1 col-12 mt-md-3">
+          <div class="page-footer__column">
+            <h2 class="page-footer__column_title">Навигация</h2>
+            <nav>
+              <ul class="navigation list page-footer_navigation">
+                <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+                <li class="navigation__item"><a href="clotches.html" class="navigation__link">Одежда</a></li>
+                <li class="navigation__item"><a href="toys.html" class="navigation__link">Игрушки</a></li>
+                <li class="navigation__item"><a href="accessories.html" class="navigation__link">Акссесуары</a></li>
+                <li class="navigation__item"><a href="about.html" class="navigation__link">О нас</a></li>
+                <li class="navigation__item"><a href="oay.html" class="navigation__link">Оплата</a></li>
+                <li class="navigation__item"><a href="contacts.html" class="navigation__link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-3 offset-lg-1 col-12 mt-md-3">
+          <div class="page-footer__column">
+            <h2 class="page-footer__column_title">Контакты</h2>
+            <address>
+              <ul class="list address-list">
+                <li><i class="fa fa-home" aria-hidden="true"></i> г. Краснодар, ул. Кирова 25</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:=79181111111">+7 (918) 111 - 11 - 11</a>
+                </li>
+                <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a
+                    href="mailto:yandex@yandex.ru">yandex@yandex.ru</a></li>
+              </ul>
+            </address>
+            <div class="social_wrapper">
+              <ul class="social list list_line justify-content-start">
+                <li class="social__item"><a href="https://vk.com/" class="social__link"><i class="fa fa-vk"
+                      aria-hidden="true"></i></a>
+                </li>
+                <li class="social__item"><a href="https://www.facebook.com/" class="social__link"><i
+                      class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="social__item"><a href="https://www.pinterest.ru/" class="social__link"><i
+                      class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                <li class="social__item"><a href="https://www.instagram.com/" class="social__link"><i
+                      class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="social__item"><a href="https://www.youtube.com/" class="social__link"><i
+                      class="fa fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <form id="order-form" class="white-popup-block mfp-hide">
+    <h1>Форма заказа</h1>
+    <fieldset style="border:0;">
+      <p>Пожалуйста заполните форму заказа.</br>
+        После чего наш менеджер свяжется с вам.</p>
+      <p>Так как наш интернет-магазин торгует исключительно продукцией произведённой вручную,
+        все заказы производятся по средствам отправки формы заказа с указанием данных для связи.
+        После отправки формы с Вами свяжется менеджер для уточнения заказа.
+        Сроки изготовления и доставки товара уточняйте у менеджера.</p>
+      <ol class="list order-list">
+        <li class="order-list__item">
+          <input class="input-form" id="name" name="name" type="text" placeholder="Имя" required="">
+        </li>
+        <li class="order-list__item">
+          <input class="input-form" id="email" name="email" type="email" placeholder="email@mail.ru" required="">
+        </li>
+        <li class="order-list__item">
+          <input class="input-form" id="phone" name="phone" type="tel" placeholder="Телефон" required="">
+        </li>
+        <li class="order-list__item">
+          <label for="textarea">Ваш заказ</label>
+          <textarea id="textarea" class="input-form" placeholder="Сообщение" rows="7" disabled></textarea>
+        </li>
+      </ol>
+    </fieldset>
+    <div id="messRez">
+      <button type="submit" class="btn btn__theme_orange" form="order-form">Заказать</button>
+      <a class="btn btn__theme_orange changeOrder">Изменить заказ</a>
+    </div>
+  </form>
+
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery.mixitup.pagination.min.js"></script>
+  <script src="js/mixit-up.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
